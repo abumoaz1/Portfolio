@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-2">
+    {% for cert in cert_show %}
+    <div class="col-6 mt-3">
+        <h4 class="text-light"> {{cert.title}} </h4>
+        <a href="{{cert.url}}">
+        <img src="{% static cert.path %}"
+        width="500"
+        height="800"
+        class="img-fluid"
+        >
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content1 %}

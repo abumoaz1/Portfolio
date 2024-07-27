@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 m-2" style="padding-right: 280px ;" href="/">Abu Moaz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'certifications' %}">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'resume' %}">Resume</a>
+          </li>
+        </ul> -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'home' %}page{% endif %}" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'about' %}page{% endif %}" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'projects' %}page{% endif %}" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'certifications' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'certifications' %}page{% endif %}" href="{% url 'certifications' %}">Certifications</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'contact' %}page{% endif %}" href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link {% if request.resolver_match.url_name == 'resume' %}active{% endif %}" aria-current="{% if request.resolver_match.url_name == 'resume' %}page{% endif %}" href="{% url 'resume' %}">Resume</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </nav>

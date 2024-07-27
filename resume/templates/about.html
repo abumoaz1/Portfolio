@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img src="{% static 'images/im.jpg' %}" alt="image" class="about_image">
+    </div>
+
+    <div class="col-7 text-left text-light">
+        <h2>Hello !</h2>
+        <p class="fs-5">
+            As an MCA student at Aligarh Muslim University, I am passionate about technology and coding. 
+            My journey in software development has equipped me with a strong foundation in programming languages 
+            like C++, Java, and Python. Alongside these, I have honed my skills in front-end and back-end technologies 
+            including HTML, CSS, JavaScript, ReactJS, Next.js, Node.js, and Django. As a full stack developer, 
+            I thrive on building dynamic and responsive web applications. My academic background, combined with 
+            hands-on experience in various programming languages and frameworks, enables me to create efficient, robust, 
+            and user-friendly software solutions.
+        </p>
+
+    </div>
+</div>
+
+<div class="row my-2">
+    <h2 class="text-center" style="color: #4fffb4;"> My Tech Stack</h2>
+    <div class="d-flex justify-content-around align-items-center mt-5 ">
+
+        <img 
+        src="{% static 'images/html.png' %}" 
+        width="70"
+        height="70"
+        alt="html"
+        class="img-fluid"
+        />
+
+        <img 
+        src="{% static 'images/css.png' %}" 
+        width="70"
+        height="70"
+        alt="css"
+        class="img-fluid"
+        />
+
+        <img 
+        src="{% static 'images/js.png' %}" 
+        width="70"
+        height="70"
+        alt="js"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/react.png' %}" 
+        width="70"
+        height="70"
+        alt="react"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/node.png' %}" 
+        width="70"
+        height="70"
+        alt="node"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/java.png' %}" 
+        width="70"
+        height="70"
+        alt="java"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/python.png' %}" 
+        width="70"
+        height="70"
+        alt="Python"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/cpp.png' %}" 
+        width="70"
+        height="70"
+        alt="c++"
+        class="img-fluid"
+        />
+        <img 
+        src="{% static 'images/django.png' %}" 
+        width="70"
+        height="70"
+        alt="django"
+        class="img-fluid"
+        />
+    </div>
+</div>
+{% endblock content1 %}
