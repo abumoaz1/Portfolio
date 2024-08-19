@@ -17,6 +17,11 @@ def projects(request):
             'path': 'images/extractify.png',
             'url': 'https://github.com/abumoaz1/Extractify'
         },
+        {
+            'title':'DevRooms',
+            'path': 'images/Devrooms.png',
+            'url': 'https://github.com/abumoaz1'
+        },
     ]
     return render(request,"projects.html", {"projects_show": projects_show})
 
